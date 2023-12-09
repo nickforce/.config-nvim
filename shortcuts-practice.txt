@@ -48,7 +48,7 @@ CTRL + Space
 # Previous function
 [ + m
 
-# Create new lines at EOF
+# Create new lines at EOF, scroll file down
 CTRL + e
 
 # Copilot setup
