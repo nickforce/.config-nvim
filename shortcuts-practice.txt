@@ -54,3 +54,6 @@ CTRL + e
 # Copilot setup
 :Copilot setup
 :Copilot enable
+
+# .zprofile vim as nvim alias
+alias vim="nvim"
