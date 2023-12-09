@@ -48,8 +48,11 @@ CTRL + Space
 # Previous function
 [ + m
 
-# Create new lines at EOF, scroll file down
+# scroll screen down
 CTRL + e
+
+# scroll screen up
+CTRL + y
 
 # Copilot setup
 :Copilot setup
