@@ -83,3 +83,13 @@ for(Task t : tasks) {
 
 # toggle relative line numbers
 :set rnu!
+
+# Search highlighting
+:set hlsearch
+:set nohlsearch
+
+# open split tab
+CMD + d
+
+# switch between split tabs
+CMD + [, CMD + ] 
