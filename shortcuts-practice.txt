@@ -1,0 +1,49 @@
+# Multiline comments
+# add comment
+CTRL + V, Shift + I, #, ESC
+# remove comment
+CTRL + V, Shift + I, #, x, ESC
+
+# Apex language server LSP
+https://github.com/aheber/tree-sitter-sfapex/blob/main/nvim-treesitter-setup.md
+
+# Search files
+Space + sf
+
+# Go to definition
+gd
+
+# Go to implementation
+gi
+
+# Go to references
+gr
+
+# :Telescope keymaps
+
+# :Mason
+install new lsp
+/search for which lsp to install, type i to install
+
+# Recently opened files
+Space + ?
+
+# Recently opened buffers
+Space + Space
+
+# Search within currently open file
+Space + /
+
+# Search words within file
+Space + sw
+
+# (look in telescope keymaps to find setup shortcuts)
+
+# Grab a bigger syntac region
+CTRL + Space
+
+# Next function
+] + m
+
+# Previous function
+[ + m
