@@ -47,3 +47,10 @@ CTRL + Space
 
 # Previous function
 [ + m
+
+# Create new lines at EOF
+CTRL + e
+
+# Copilot setup
+:Copilot setup
+:Copilot enable
