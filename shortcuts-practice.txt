@@ -93,3 +93,6 @@ CMD + d
 
 # switch between split tabs
 CMD + [, CMD + ] 
+
+# replace multple occurences
+type # while cursor on word, :%s//newword/g 
