@@ -80,3 +80,6 @@ for(Task t : tasks) {
      tasksbyweek.get(weekstart).add(t);
 }
 ```
+
+# toggle relative line numbers
+:set rnu!
