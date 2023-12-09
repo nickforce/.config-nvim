@@ -70,5 +70,13 @@ CTRL + ^
 # install go air server
 go install github.com/cosmtrek/air@latest
 
-
-
+# map create example
+```
+Map<Date, List<Task>> tasksbyweek = new Map<Date, List<Task>>();
+for(Task t : tasks) {
+     Date weekstart = new Date();
+     if(tasksbyweek.get(weekstart)==null)
+          tasksbyweek.put(weekstart, new List<Task>());
+     tasksbyweek.get(weekstart).add(t);
+}
+```
