@@ -104,3 +104,10 @@ type # while cursor on word, :%s//newword/g
 ddp # move line down
 ddkP # move line up
 
+# move cursor foward and backwords
+# forward
+w # move to next word
+e # move to end of word
+# backword
+b # move to previous word
+ge # move to end of previous word
