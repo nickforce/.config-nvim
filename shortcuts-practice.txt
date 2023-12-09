@@ -66,3 +66,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Edit alternate file or last edited file
 CTRL + ^
+
+# install go air server
+go install github.com/cosmtrek/air@latest
+
+
+
