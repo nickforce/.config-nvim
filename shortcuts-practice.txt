@@ -96,3 +96,8 @@ CMD + [, CMD + ]
 
 # replace multple occurences
 type # while cursor on word, :%s//newword/g 
+
+## move line up or down
+ddp # move line down
+ddkP # move line up
+
