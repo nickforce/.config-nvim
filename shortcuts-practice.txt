@@ -58,5 +58,11 @@ CTRL + e
 # .zprofile vim as nvim alias
 alias vim="nvim"
 
+# .zprofile go air server
+alias air='~/go/bin/air'
+
+# .zprofile homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Edit alternate file or last edited file
 CTRL + ^
