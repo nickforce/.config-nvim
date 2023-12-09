@@ -57,3 +57,6 @@ CTRL + e
 
 # .zprofile vim as nvim alias
 alias vim="nvim"
+
+# Edit alternate file or last edited file
+CTRL + ^
