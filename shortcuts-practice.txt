@@ -111,3 +111,6 @@ e # move to end of word
 # backword
 b # move to previous word
 ge # move to end of previous word
+
+# :r
+
