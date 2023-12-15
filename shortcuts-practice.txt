@@ -114,3 +114,15 @@ ge # move to end of previous word
 
 # :r
 
+# delete around commands
+dap # delete around paragraph
+dip # delete inside paragraph
+daw # delete around word
+diw # delete inside word
+di( # delete inside parentheses
+di[ # delete inside brackets
+di{ # delete inside curly braces
+di< # delete inside angle brackets
+di" # delete inside double quotes
+
+
