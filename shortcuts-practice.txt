@@ -1,3 +1,6 @@
+# Copy a line
+yy
+
 # Multiline comments
 # add comment
 CTRL + V, Shift + I, #, ESC
