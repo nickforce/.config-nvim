@@ -284,6 +284,7 @@ vim.filetype.add({
     trigger = 'apex',
     soql = 'soql',
     sosl = 'sosl',
+    templ = 'templ',
   }
 })
 -- Set highlight on search
