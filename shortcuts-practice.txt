@@ -1,3 +1,9 @@
+# create vertical split
+:vsp
+
+# toggle between vertical splits
+CTRL + w + w
+
 # set tab length
 :set tabstop=2
 :set shiftwidth=2
