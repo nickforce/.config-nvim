@@ -1,3 +1,10 @@
+# cycle through highlighted words
+Place your cursor on the word you want to highlight.
+Press * to search for the word under the cursor.
+To select the next match:
+Enter Visual Mode (v or V or Ctrl-v) first, then type gn. This selects the next match.
+Continue pressing gn to select further matches and edit.
+
 # create vertical split
 :vsp
 
