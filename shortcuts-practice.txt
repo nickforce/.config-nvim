@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 # search for text, grep
 grep -Rnw '.' -e 'searchtext'
 -R is recursive
 -n is line number
 -w is whole word
+=======
+# cycle through highlighted words
+Place your cursor on the word you want to highlight.
+Press * to search for the word under the cursor.
+To select the next match:
+Enter Visual Mode (v or V or Ctrl-v) first, then type gn. This selects the next match.
+Continue pressing gn to select further matches and edit.
+>>>>>>> a90eab10242709faee2cb45df2ebe8448baa6af6
 
 # create vertical split
 :vsp
