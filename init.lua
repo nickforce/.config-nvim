@@ -72,7 +72,7 @@ require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
-  
+
   'github/copilot.vim',
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
@@ -114,7 +114,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -213,15 +213,15 @@ require('lazy').setup({
       },
     },
   },
-  -- nj turned off > 
---  {
---    -- Add indentation guides even on blank lines
---    'lukas-reineke/indent-blankline.nvim',
---    -- Enable `lukas-reineke/indent-blankline.nvim`
---    -- See `:help ibl`
---    main = 'ibl',
---    opts = {},
---  },
+  -- nj turned off >
+  --  {
+  --    -- Add indentation guides even on blank lines
+  --    'lukas-reineke/indent-blankline.nvim',
+  --    -- Enable `lukas-reineke/indent-blankline.nvim`
+  --    -- See `:help ibl`
+  --    main = 'ibl',
+  --    opts = {},
+  --  },
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
@@ -505,7 +505,7 @@ end, 0)
 
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
   -- NOTE: Remember that lua is a real programming language, and as such it is possible
   -- to define small helper and utility functions so you don't have to repeat yourself
   -- many times.
@@ -542,12 +542,23 @@ local on_attach = function(_, bufnr)
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   end, '[W]orkspace [L]ist Folders')
 
+
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
+  -- Autoformat on save
+  if client.supports_method("textDocument/formatting") then
+    local group = vim.api.nvim_create_augroup("LspFormat" .. bufnr, { clear = true })
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      group = group,
+      buffer = bufnr,
+      callback = function()
+        vim.lsp.buf.format({ bufnr = bufnr })
+      end,
+    })
+  end
 end
-
 -- document existing key chains
 require('which-key').register {
   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },

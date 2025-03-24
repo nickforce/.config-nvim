@@ -1,3 +1,9 @@
+# search for text, grep
+grep -Rnw '.' -e 'searchtext'
+-R is recursive
+-n is line number
+-w is whole word
+
 # create vertical split
 :vsp
 
